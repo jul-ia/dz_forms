@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D1E95131-129C-4C96-8014-3A70997F716E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>form5_photo</RootNamespace>
-    <AssemblyName>form5_photo</AssemblyName>
+    <RootNamespace>form4_photo</RootNamespace>
+    <AssemblyName>form4_photo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -64,6 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
