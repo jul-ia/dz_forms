@@ -15,6 +15,8 @@ namespace form5_photo
         public Form1()
         {
             InitializeComponent();
+            radioButton1.Checked = true;
+            button1.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,7 +34,7 @@ namespace form5_photo
 
             n = Convert.ToInt32(textBox1.Text);
             sum = n * cena;
-            label3.Text = "Price: " + cena.ToString("c") + "\nNumber: " + n.ToString() + "\nSum: " + sum.ToString("c");
+            label3.Text = "Price: " + cena.ToString("n") + "\nNumber: " + n.ToString() + "\nTotal sum: " + sum.ToString("n");
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -59,7 +61,7 @@ namespace form5_photo
 
         private void radioButton_Click(object sender, EventArgs e)
         {
-            label3.Text = "";         
+            label3.Text = "";
             textBox1.Focus();
         }
     }

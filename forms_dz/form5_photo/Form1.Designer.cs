@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(90, 29);
+            this.label1.Location = new System.Drawing.Point(74, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 14);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(93, 63);
+            this.radioButton1.Location = new System.Drawing.Point(77, 70);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(64, 18);
             this.radioButton1.TabIndex = 1;
@@ -62,7 +62,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(93, 88);
+            this.radioButton2.Location = new System.Drawing.Point(77, 95);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(72, 18);
             this.radioButton2.TabIndex = 2;
@@ -74,7 +74,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(93, 113);
+            this.radioButton3.Location = new System.Drawing.Point(77, 120);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(72, 18);
             this.radioButton3.TabIndex = 3;
@@ -86,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 168);
+            this.label2.Location = new System.Drawing.Point(74, 177);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 14);
             this.label2.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(169, 160);
+            this.textBox1.Location = new System.Drawing.Point(153, 169);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 5;
@@ -103,9 +103,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(93, 210);
+            this.button1.Location = new System.Drawing.Point(77, 211);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 31);
+            this.button1.Size = new System.Drawing.Size(81, 32);
             this.button1.TabIndex = 6;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -113,17 +113,16 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(90, 275);
+            this.label3.Location = new System.Drawing.Point(74, 262);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 67);
+            this.label3.Size = new System.Drawing.Size(224, 80);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Result";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 374);
+            this.ClientSize = new System.Drawing.Size(425, 394);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -132,7 +131,7 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
