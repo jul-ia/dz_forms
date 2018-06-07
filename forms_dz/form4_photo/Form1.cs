@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace form5_photo
+namespace form4_photo
 {
     public partial class Form1 : Form
     {

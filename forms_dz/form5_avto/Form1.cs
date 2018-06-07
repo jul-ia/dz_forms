@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace form6_avto
+namespace form5_avto
 {
     public partial class Form1 : Form
     {
@@ -36,7 +36,7 @@ namespace form6_avto
             string st;
             st = "Price: " + sum.ToString("C");
 
-            if(checkBox1.Checked && checkBox2.Checked && checkBox3.Checked)
+            if (checkBox1.Checked && checkBox2.Checked && checkBox3.Checked)
             {
                 discount = sum * 0.01;
                 total -= discount;
