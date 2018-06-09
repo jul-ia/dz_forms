@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form7_calculator", "form7_c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form6_jalousie", "form6_jalousie\form6_jalousie.csproj", "{29806329-FE04-4B5A-9214-E3BBD5094358}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form8_imageView", "form8_imageView\form8_imageView.csproj", "{F599D874-F35B-4932-B023-0720723B75DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{29806329-FE04-4B5A-9214-E3BBD5094358}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29806329-FE04-4B5A-9214-E3BBD5094358}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29806329-FE04-4B5A-9214-E3BBD5094358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F599D874-F35B-4932-B023-0720723B75DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F599D874-F35B-4932-B023-0720723B75DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F599D874-F35B-4932-B023-0720723B75DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F599D874-F35B-4932-B023-0720723B75DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,7 +12,9 @@ namespace form7_calculator
 {
     public partial class Form1 : Form
     {
-        private const int bw = 40, bh = 22;
+        //button size
+        private const int bw = 60, bh = 35;
+        //distance between buttons
         private const int dx = 5, dy = 5;
 
         private Button[] btn = new Button[15];
@@ -21,23 +23,27 @@ namespace form7_calculator
                             '1', '2', '3', '=',
                                  '0', ',', 'c'};
 
+        //button identification by Tags
         int[] btnTag ={ 7, 8, 9, -3,
                         4, 5, 6, -4,
                         1, 2, 3, -2,
                         0, -1, -5 };
 
         private double ac = 0;
-        private int op = 0;
-        private Boolean fd = true;
+        private int op = 0;             //operation code
+        private Boolean fd = true;      //true - waiting for first number if '+' pressed, false - waiting for next number
 
         public Form1()
         {
             InitializeComponent();
             this.ClientSize = new Size(4 * bw + 5 * dx, 5 * bh + 7 * dy);
             label1.SetBounds(dx, dy, 4 * bw + 3 * dx, bh);
+            label1.AutoSize = false;
+            label1.TextAlign = ContentAlignment.MiddleRight;
             label1.Text = "0";
 
-            int k = 0, x, y;
+            int k = 0;      //button number
+            int x, y;       //button coordanates
             y = label1.Bottom + dy;
 
             for(int i = 0; i < 4; i++)
@@ -52,6 +58,7 @@ namespace form7_calculator
                         btn[k].Tag = btnTag[k];
                         btn[k].Text = btnText[k].ToString();
 
+                        // event Click
                         this.btn[k].Click += new System.EventHandler(this.Button_Click);
                         if(btnTag[k] < 0)
                         {
