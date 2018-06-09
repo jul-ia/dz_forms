@@ -17,9 +17,11 @@ namespace form6_jalousie
             InitializeComponent();
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            List<string> items = new List<string>{ "пластик", "алюминий", "бамбук", "соломка", "текстиль" };
-            foreach (string s in items)
-                comboBox1.Items.Add(s);
+            //string[] items = new string[] { "пластик", "алюминий", "бамбук", "соломка", "текстиль" };
+            //comboBox1.Items.AddRange(items);
+
+            List<string> itemsList = new List<string>{ "пластик", "алюминий", "бамбук", "соломка", "текстиль" };
+            comboBox1.DataSource = itemsList;
 
             //comboBox1.Items.Add("пластик");
             //comboBox1.Items.Add("алюминий");
@@ -84,7 +86,7 @@ namespace form6_jalousie
                     }
                 case 2:
                     {
-                        cena = 15;
+                        cena = 75;
                         break;
                     }
                 case 3:
@@ -98,7 +100,7 @@ namespace form6_jalousie
                         break;
                     }
             }
-            sum = (w * h) / 1000 * cena;
+            sum = (w * h) / 10000 * cena;
             label4.Text = "Size: " + w + "x" + h + " sm.\nPrice (hr/m^2): "+ cena.ToString("c")+"\nTotal sum: " + sum.ToString("c");
         }
     }
