@@ -8,21 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace from6_jalousie
+namespace form6_jalousie
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            comboBox1.Items.Add("пластик");
-            comboBox1.Items.Add("алюминий");
-            comboBox1.Items.Add("бамбук");
-            comboBox1.Items.Add("соломка");
-            comboBox1.Items.Add("текстиль");
+            List<string> items = new List<string>{ "пластик", "алюминий", "бамбук", "соломка", "текстиль" };
+            foreach (string s in items)
+                comboBox1.Items.Add(s);
+
+            //comboBox1.Items.Add("пластик");
+            //comboBox1.Items.Add("алюминий");
+            //comboBox1.Items.Add("бамбук");
+            //comboBox1.Items.Add("соломка");
+            //comboBox1.Items.Add("текстиль");
 
             comboBox1.SelectedIndex = 0;
         }
@@ -51,6 +54,11 @@ namespace from6_jalousie
                 button1.Enabled = false;
             else
                 button1.Enabled = true;
+            label4.Text = "";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
             label4.Text = "";
         }
 
@@ -85,18 +93,13 @@ namespace from6_jalousie
                         break;
                     }
                 case 4:
-                {
-                    cena = 60;
-                    break;
-                }
+                    {
+                        cena = 60;
+                        break;
+                    }
             }
             sum = (w * h) / 1000 * cena;
-            label4.Text = "Size: " + w + "x" + h + " sm.\nTotal sum: " + sum.ToString("c");
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            label4.Text = "";
+            label4.Text = "Size: " + w + "x" + h + " sm.\nPrice (hr/m^2): "+ cena.ToString("c")+"\nTotal sum: " + sum.ToString("c");
         }
     }
 }

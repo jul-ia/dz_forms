@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace from6_jalousie.Properties
+namespace form6_jalousie.Properties
 {
 
 
