@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form8_imageView", "form8_im
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form9_imageView2", "form9_imageView2\form9_imageView2.csproj", "{0B87B0AD-FF28-44C7-AB9D-390AB2796740}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stopWatch", "stopWatch\stopWatch.csproj", "{D8BB44D7-668C-45E7-8F81-F00E8DE7A0B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{0B87B0AD-FF28-44C7-AB9D-390AB2796740}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B87B0AD-FF28-44C7-AB9D-390AB2796740}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B87B0AD-FF28-44C7-AB9D-390AB2796740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8BB44D7-668C-45E7-8F81-F00E8DE7A0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8BB44D7-668C-45E7-8F81-F00E8DE7A0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8BB44D7-668C-45E7-8F81-F00E8DE7A0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8BB44D7-668C-45E7-8F81-F00E8DE7A0B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
