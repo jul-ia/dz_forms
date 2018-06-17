@@ -18,13 +18,14 @@ namespace stopWatch
         {
             InitializeComponent();
 
-            timer1.Interval = 500;
+            timer1.Interval = 33;
             m = 0;
             s = 0;
             ms = 0;
             label1.Text = "00";
             label2.Text = "00";
             label3.Visible = true;
+            label5.Text = "00";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,48 +43,59 @@ namespace stopWatch
                 button2.Enabled = false;
             }
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
             m = 0; s = 0; ms = 0;
             label1.Text = "00";
             label2.Text = "00";
-
+            label5.Text = "00";
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (label3.Visible)
             {
-                if (s < 59)
+                if (ms < 100)
                 {
-                    s++;
-                    if (s < 10)
-                    {
-                        label2.Text = "0" + s.ToString();
-                    }
-                    else
-                        label2.Text = s.ToString();
+                    ms+=6;
+                    label5.Text = ms.ToString();
                 }
                 else
                 {
-                    if (m < 59)
+                    if (s < 59)
                     {
-                        m++;
-                        if (m < 10)
+                        s++;
+                        if (s < 10)
                         {
-                            label1.Text = "0" + m.ToString();
+                            label2.Text = "0" + s.ToString();
                         }
                         else
-                            label1.Text = m.ToString();
-                        s = 0;
-                        label2.Text = "00";
+                            label2.Text = s.ToString();
                     }
                     else
                     {
-                        m = 0;
-                        label1.Text = "00";
+                        if (m < 59)
+                        {
+                            m++;
+                            if (m < 10)
+                            {
+                                label1.Text = "0" + m.ToString();
+                            }
+                            else
+                                label1.Text = m.ToString();
+                            s = 0;
+                            label2.Text = "00";
+                        }
+                        else
+                        {
+                            m = 0;
+                            label1.Text = "00";
+                        }
                     }
+                    label3.Visible = false;
+                    ms = 0;
+                    label5.Text = "00";
                 }
-                label3.Visible = false;
             }
             else
                 label3.Visible = true;
