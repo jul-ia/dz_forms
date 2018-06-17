@@ -18,6 +18,7 @@ namespace form11_timer
         public Form1()
         {
             InitializeComponent();
+            label1.Text = "00:00";
             numericUpDown1.Maximum = 59;
             numericUpDown1.Minimum = 0;
             numericUpDown1.TabStop = false;
