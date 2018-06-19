@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form1_milesKm", "form1_milesKm\form1_milesKm.csproj", "{3485EB4D-37DB-483B-9F38-600EB18F8096}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form12_drawString", "form12_drawString\form12_drawString.csproj", "{80E83A5C-8558-4298-83EB-62DD640B8D56}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form13_diagrame", "form13_diagrame\form13_diagrame.csproj", "{C72071EB-CE9D-4D00-B46A-AEDFFA500F3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form14_graph", "form14_graph\form14_graph.csproj", "{F4B3658B-2787-4751-B6BC-D24136D5238F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{C72071EB-CE9D-4D00-B46A-AEDFFA500F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C72071EB-CE9D-4D00-B46A-AEDFFA500F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C72071EB-CE9D-4D00-B46A-AEDFFA500F3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B3658B-2787-4751-B6BC-D24136D5238F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B3658B-2787-4751-B6BC-D24136D5238F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B3658B-2787-4751-B6BC-D24136D5238F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B3658B-2787-4751-B6BC-D24136D5238F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

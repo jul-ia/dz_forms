@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace form13_diagrame
+namespace form14_graph
 {
     public partial class Form1 : Form
     {
@@ -19,12 +19,12 @@ namespace form13_diagrame
             Graphics g = e.Graphics;
             Font dfont = new Font("Tahoma", 9);
             Font hfont = new Font("Tahoma", 14, FontStyle.Regular);
-            string header = "Changing in dollar exchange rate";
+            string header = "Dollar exchange rate";
+            int w = (int)g.MeasureString(header, hfont).Width;
+            int x = (this.ClientSize.Width - w) / 2;
+            g.DrawString(header, hfont, System.Drawing.Brushes.Black, x, 5);
 
-            int wh = (int)g.MeasureString(header, hfont).Width;
-            int x = (this.ClientSize.Width - wh) / 2;
-            g.DrawString(header, hfont, System.Drawing.Brushes.DarkOrchid, x, 5);
-
+            int sw = (int)((this.ClientSize.Width - 40) / (d.Length - 1));
             double max = d[0];
             double min = d[0];
             for(int i = 0; i < d.Length; i++)
@@ -35,22 +35,23 @@ namespace form13_diagrame
                     min = d[i];
             }
 
-            int x1, y1;
-            int w, h;
-            w = (ClientSize.Width-40-5*(d.Length-1)) / d.Length;
+            int x1, x2, y1, y2;
             x1 = 20;
+            y1 = this.ClientSize.Height - 20 - (int)((this.ClientSize.Height - 100) * (d[0] - min) / (max - min));
+            g.DrawRectangle(System.Drawing.Pens.Black, x1 - 2, y1 - 2, 4, 4);
+            g.DrawString(Convert.ToString(d[0]), dfont, System.Drawing.Brushes.Black, x1 - 10, y1 - 20);
 
-            for(int i = 0; i < d.Length; i++)
+            for(int i = 1; i < d.Length; i++)
             {
-                y1 = this.ClientSize.Height - 20 - (int)((this.ClientSize.Height - 100) * (d[i] - min) / (max - min));
-                g.DrawString(Convert.ToString(d[i]), dfont, System.Drawing.Brushes.Black, x1, y1 - 20);
-
-                h = ClientSize.Height - y1 - 20 + 1;
-                g.FillRectangle(Brushes.BlueViolet, x1, y1, w, h);
-
-                g.DrawRectangle(System.Drawing.Pens.Black, x1, y1, w, h);
-                x1 += w + 5;
+                x2 = 8 + i * sw;
+                y2 = this.ClientSize.Height - 20 - (int)((this.ClientSize.Height - 100) * (d[i] - min) / (max - min));
+                g.DrawRectangle(System.Drawing.Pens.Black, x2 - 2, y2 - 2, 4, 4);
+                g.DrawLine(System.Drawing.Pens.Black, x1, y1, x2, y2);
+                g.DrawString(Convert.ToString(d[i]), dfont, System.Drawing.Brushes.Black, x2 - 20, y2 - 20);
+                x1 = x2;
+                y1 = y2;
             }
+
         }
 
         public Form1()
@@ -61,21 +62,21 @@ namespace form13_diagrame
             try
             {
                 sr = new System.IO.StreamReader(Application.StartupPath + "\\data.txt");
-
                 d = new double[5];
                 int i = 0;
                 string t = sr.ReadLine();
-                while(t != null && i < d.Length)
+                while(t!= null && i < d.Length)
                 {
                     d[i++] = Convert.ToDouble(t);
                     t = sr.ReadLine();
                 }
                 sr.Close();
+
                 this.Paint += new PaintEventHandler(drawDiagram);
             }
             catch (System.IO.FileNotFoundException ex)
             {
-                MessageBox.Show(ex.Message + "\n(" + ex.GetType().ToString() +")", "Graphic", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message + "\n(" + ex.GetType().ToString() + ")", "Graph", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch(Exception ex)
             {
