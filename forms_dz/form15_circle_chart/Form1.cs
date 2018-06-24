@@ -26,7 +26,7 @@ namespace form15_circle_chart
             try
             {
                 System.IO.StreamReader sr;
-                sr = new System.IO.StreamReader(Application.StartupPath + "\\data.txt");// System.Text.Encoding.GetEncoding(1251));
+                sr = new System.IO.StreamReader(Application.StartupPath + "\\data.txt");
                 header = sr.ReadLine();
                 N = Convert.ToInt16(sr.ReadLine());
                 dat = new double[N];
@@ -57,7 +57,7 @@ namespace form15_circle_chart
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Circle chart", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Pie chart", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -71,7 +71,7 @@ namespace form15_circle_chart
 
             Font lfont = new Font("Tahoma", 9);
 
-            int d = ClientSize.Height - 70;
+            int d = ClientSize.Height - 110;
             int x0 = 30;
             int y0 = (ClientSize.Height - d) / 2 + 10;
             int lx = 60 + d;
@@ -87,17 +87,17 @@ namespace form15_circle_chart
                 switch (i)
                 {
                     case 0:
-                        fbrush = Brushes.YellowGreen; break;
-                    case 1:
                         fbrush = Brushes.Gold; break;
+                    case 1:
+                        fbrush = Brushes.DarkMagenta; break;
                     case 2:
                         fbrush = Brushes.Pink; break;
                     case 3:
-                        fbrush = Brushes.Violet; break;
+                        fbrush = Brushes.Indigo; break;
                     case 4:
                         fbrush = Brushes.OrangeRed; break;
                     case 5:
-                        fbrush = Brushes.RoyalBlue; break;
+                        fbrush = Brushes.BlueViolet; break;
                     case 6:
                         fbrush = Brushes.SteelBlue; break;
                     case 7:
@@ -120,6 +120,11 @@ namespace form15_circle_chart
                 sta += swe;
             }
 
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            this.Refresh();
         }
     }
 }
