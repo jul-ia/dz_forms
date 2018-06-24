@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2037
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form1_milesKm", "form1_milesKm\form1_milesKm.csproj", "{3485EB4D-37DB-483B-9F38-600EB18F8096}"
 EndProject
@@ -32,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form14_graph", "form14_graph\form14_graph.csproj", "{F4B3658B-2787-4751-B6BC-D24136D5238F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form15_circle_chart", "form15_circle_chart\form15_circle_chart.csproj", "{A0D15793-D7E7-4A9C-B358-B63D0AEF98F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form16_planeFly", "form16_planeFly\form16_planeFly.csproj", "{A884D145-CB0E-4517-A25C-F5DF099AC195}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{A0D15793-D7E7-4A9C-B358-B63D0AEF98F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0D15793-D7E7-4A9C-B358-B63D0AEF98F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0D15793-D7E7-4A9C-B358-B63D0AEF98F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A884D145-CB0E-4517-A25C-F5DF099AC195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A884D145-CB0E-4517-A25C-F5DF099AC195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A884D145-CB0E-4517-A25C-F5DF099AC195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A884D145-CB0E-4517-A25C-F5DF099AC195}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
