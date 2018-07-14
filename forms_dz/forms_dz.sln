@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form16_planeFly", "form16_p
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form17_parnyPicture", "form17_parnyPicture\form17_parnyPicture.csproj", "{93F6AC04-5E1D-4093-8F4C-CB67425BD20A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form18_createPicture", "form18_createPicture\form18_createPicture.csproj", "{37BFF587-AD2B-41F8-BFD4-01A829281E18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{93F6AC04-5E1D-4093-8F4C-CB67425BD20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93F6AC04-5E1D-4093-8F4C-CB67425BD20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93F6AC04-5E1D-4093-8F4C-CB67425BD20A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37BFF587-AD2B-41F8-BFD4-01A829281E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BFF587-AD2B-41F8-BFD4-01A829281E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BFF587-AD2B-41F8-BFD4-01A829281E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BFF587-AD2B-41F8-BFD4-01A829281E18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
