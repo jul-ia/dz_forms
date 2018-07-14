@@ -81,7 +81,7 @@ namespace form17_parnyPicture
             }
         }
 
-        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             newGame();
         }
@@ -102,7 +102,7 @@ namespace form17_parnyPicture
             cw = (int)(pics.Width / np);
             ch = pics.Height;
 
-            this.ClientSize = new System.Drawing.Size(nw * (ch + 2) + 1, nh * (ch + 1) + 1 + menuStrip1.Height);
+            this.ClientSize = new System.Drawing.Size(nw * (ch + 2) + 1, nh * (ch + 2) + 1 + menuStrip1.Height);
             g = this.CreateGraphics();
 
             timer1 = new Timer();
@@ -176,7 +176,7 @@ namespace form17_parnyPicture
             }
         }
 
-        private void ToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
 
             AboutBox1 aboutBox = new AboutBox1();
