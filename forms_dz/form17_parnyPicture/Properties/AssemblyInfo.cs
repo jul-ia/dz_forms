@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
 [assembly: AssemblyTitle("form17_parnyPicture")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Найдите парные картинки")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("form17_parnyPicture")]
