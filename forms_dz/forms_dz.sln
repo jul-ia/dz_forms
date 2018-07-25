@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form18_createPicture", "for
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form19_brushes", "form19_brushes\form19_brushes.csproj", "{9257376C-8C7F-4DCF-BE45-7C9C5F8BC393}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form20_runningString", "form20_runningString\form20_runningString.csproj", "{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{9257376C-8C7F-4DCF-BE45-7C9C5F8BC393}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9257376C-8C7F-4DCF-BE45-7C9C5F8BC393}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9257376C-8C7F-4DCF-BE45-7C9C5F8BC393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
