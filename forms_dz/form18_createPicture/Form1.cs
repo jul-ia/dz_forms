@@ -109,7 +109,7 @@ namespace form18_createPicture
                     g.DrawRectangle(Pens.Black, i * cw, j * ch + menuStrip1.Height, cw, ch);
                     if ((showNumbers) && field[i, j] != 0)
                     {
-                        g.DrawString(Convert.ToString(field[i, j]), new Font("Tahoma", 10, FontStyle.Bold), Brushes.Black, i * cw + 5, j * ch + 5 + menuStrip1.Height);
+                        g.DrawString(Convert.ToString(field[i, j]), new Font("Tahoma", 10, FontStyle.Bold), Brushes.BlueViolet, i * cw + 5, j * ch + 5 + menuStrip1.Height);
                     }
                 }
             }
@@ -133,11 +133,16 @@ namespace form18_createPicture
         private Boolean finish()
         {
             int i = 0, j = 0;
-            for (int c = 1; c < nw * nh; c++)
+            int c;
+            for (c = 1; c < nw * nh; c++)
             {
-                if (field[i, j] != c) return false;
-                if (i < nw - 1) j++;
-                else { j = 0; i++; }
+                if (field[i, j] != c)
+                    return false;
+                if (i < nw - 1)
+                    i++;
+                else{
+                    i = 0; j++;
+                }
             }
             return true;
         }

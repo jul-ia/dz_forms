@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,7 +31,8 @@ namespace form17_parnyPicture
             int x, y;
             x = i * (cw + 2);
             y = j * (ch + 2) + menuStrip1.Height;
-            if (field[i, j] > 200) g.FillRectangle(SystemBrushes.Control, x, y, cw + 2, ch + 2);
+            if (field[i, j] > 200)
+                g.FillRectangle(SystemBrushes.Control, x, y, cw + 2, ch + 2);
             if (field[i, j] > 100 && field[i, j] < 200)
             {
                 g.DrawImage(pics, new Rectangle(x + 1, y + 1, cw, ch), new Rectangle((field[i, j] - 101) * cw, 0, cw, ch), GraphicsUnit.Pixel);
@@ -90,14 +88,16 @@ namespace form17_parnyPicture
         {
             InitializeComponent();
 
-            try
-            {
-                pics = new Bitmap("picture.jpg");
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("File 'picture.jpg' not found\n" + e.ToString(), "Парніе картинки", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //try
+            //{
+            //    pics = new Bitmap("picture.jpg");
+            //}
+            //catch (Exception e)
+            //{
+            //    MessageBox.Show("File 'picture.jpg' not found\n" + e.ToString(), "Парные картинки", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+
+            pics = Properties.Resources.picture;
 
             cw = (int)(pics.Width / np);
             ch = pics.Height;
