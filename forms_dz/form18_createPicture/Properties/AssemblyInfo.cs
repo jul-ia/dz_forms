@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("form17_parnyPicture")]
-[assembly: AssemblyDescription("Найдите парные картинки")]
+[assembly: AssemblyTitle("form18_createPicture")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("form17_parnyPicture")]
+[assembly: AssemblyProduct("form18_createPicture")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("93f6ac04-5e1d-4093-8f4c-cb67425bd20a")]
+[assembly: Guid("37bff587-ad2b-41f8-bfd4-01a829281e18")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

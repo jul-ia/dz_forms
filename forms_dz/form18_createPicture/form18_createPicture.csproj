@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93F6AC04-5E1D-4093-8F4C-CB67425BD20A}</ProjectGuid>
+    <ProjectGuid>{37BFF587-AD2B-41F8-BFD4-01A829281E18}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>form17_parnyPicture</RootNamespace>
-    <AssemblyName>form17_parnyPicture</AssemblyName>
+    <RootNamespace>form18_createPicture</RootNamespace>
+    <AssemblyName>form18_createPicture</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -90,7 +90,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\picture.jpg" />
+    <None Include="bin\Debug\picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
