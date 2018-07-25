@@ -15,9 +15,8 @@ namespace form16_planeFly
 
         System.Drawing.Bitmap sky, plane;
         Graphics g;
-        int dx1, dx2;
+        int dx1;
         Rectangle rct1;
-        Rectangle rct2;
 
         System.Random rnd;
 
@@ -43,16 +42,11 @@ namespace form16_planeFly
             rnd = new System.Random();
 
             rct1.X = -40;
-            rct1.Y = 20 + rnd.Next(20);
+            rct1.Y = 20 + rnd.Next(ClientSize.Height-plane.Height);
             rct1.Width = plane.Width;
             rct1.Height = plane.Height;
 
-            rct2.X = -40;
-            rct2.Y = rct1.Y + plane.Height + (ClientSize.Height - 300) / 2;
-            rct2.Width = rct1.Width;
-            rct2.Height = rct1.Height;
             dx1 = rnd.Next(5, 9);
-            dx2 = rnd.Next(5, 9);
             timer1.Interval = 1;
             timer1.Enabled = true;
         }
@@ -65,22 +59,12 @@ namespace form16_planeFly
             else
             {
                 rct1.X = -40;
-                rct1.Y = 20 + rnd.Next(40);
+                rct1.Y = 20 + rnd.Next(ClientSize.Height - plane.Height);
                 dx1 = rnd.Next(5, 9);
             }
 
             g.DrawImage(plane, rct1.X, rct1.Y);
 
-            if (rct2.X < this.ClientRectangle.Width)
-                rct2.X += dx2;
-            else
-            {
-                rct2.X = -40;
-                rct2.Y = rct1.Y + plane.Height + (ClientSize.Height - 300) / 2;
-                dx2 = rnd.Next(5, 9);
-            }
-
-            g.DrawImage(plane, rct2.X, rct2.Y);
             Rectangle reg = new Rectangle(20, 20, sky.Width - 40, sky.Height - 40);
             g.DrawRectangle(Pens.Black, reg.X, reg.Y, reg.Width - 1, reg.Height - 1);
             this.Invalidate(reg);
