@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace form17_parnyPicture
+namespace form18_makePicture
 {
     static class Program
     {

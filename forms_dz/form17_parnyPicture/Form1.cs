@@ -13,7 +13,7 @@ namespace form17_parnyPicture
     public partial class Form1 : Form
     {
         const int nw = 4;
-        const int nh = 3;
+        const int nh = 2;
         const int np = (nw * nh) / 2;
         System.Drawing.Graphics g;
         Bitmap pics;
@@ -176,10 +176,8 @@ namespace form17_parnyPicture
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            //AboutBox1 a;
 
         }
-
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             drawField();
