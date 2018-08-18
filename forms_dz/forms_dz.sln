@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2037
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form1_milesKm", "form1_milesKm\form1_milesKm.csproj", "{3485EB4D-37DB-483B-9F38-600EB18F8096}"
 EndProject
@@ -42,6 +42,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form19_brushes", "form19_brushes\form19_brushes.csproj", "{9257376C-8C7F-4DCF-BE45-7C9C5F8BC393}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form20_runningString", "form20_runningString\form20_runningString.csproj", "{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "form21_alarmClock", "form21_alarmClock\form21_alarmClock.csproj", "{1F85676D-2880-4A98-A249-6D3299466EAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE91CBD6-E7CE-4B6E-9D0D-FCBD179A284B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F85676D-2880-4A98-A249-6D3299466EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F85676D-2880-4A98-A249-6D3299466EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F85676D-2880-4A98-A249-6D3299466EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F85676D-2880-4A98-A249-6D3299466EAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
